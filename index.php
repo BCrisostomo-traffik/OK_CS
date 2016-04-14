@@ -151,59 +151,32 @@ require_once('utils.php');
     </div>
 
     <div class="footer large-12 columns">
-
         <div class="row" style="margin-top: 30px; line-height: 20px; font-family:arial,san-serif">
             <div class="small-12 columns">
-                <span class="hide-for-small"><a href="http://www.centurycouncil.org/" target="_blank">Consommation
-                        responsable</a> | <a href="http://www.drinkiq.com/" target="_blank">DrinkIQ.com</a>| <a
-                        href="rules_and_regulations.php" target="_blank">Règlement officiel du concours</a> | <a
-                        href="privacy.php" target="_blank">Politique de confidentialité</a></span>
-
-						<span class="hide-for-medium-up"><a href="http://www.centurycouncil.org/" target="_blank">Consommation
-                                responsable</a> | <a href="http://www.drinkiq.com/" target="_blank">DrinkIQ.com</a> | <a
-                                href="rules_and_regulations.php" target="_blank">Règlement officiel du concours</a> |
-						<span class="small-12 column"><a href="privacy.php" target="_blank">Politique de
-                                confidentialité</a></span></span>
+                <a href="">Disclaimer</a> | <a href="">Privacy Policy</a> | <a href="">Your California Privacy
+                    Rights</a> | <a href="">Site map</a>
             </div>
 
-            <div class="small-12 columns">
-                <p class="contest-info">* Aucun achat requis. Le concours s'adresse uniquement aux r&eacute;sidents du
-                    Qu&eacute;bec. Les participants doivent avoir 18 ans et plus. Le cours se d&eacute;roule du 31
-                    janvier 2016 au 26 mars 2016. Visitez le www.savourezlefroid.com pour consulter le r&egrave;glement
-                    complet du concours, remplir un formulaire d'inscription sans achat ou entrer le NIP inscrit sur les
-                    collerettes des bouteilles de cr&egrave;me irlandaise Baileys<sup>TM/MC</sup> Original au format de
-                    750 mL ou 1,14 L, ou de cr&egrave;me irlandaise Baileys<sup>TM/MC</sup> Vanille cannelle, de cr&egrave;me
-                    irlandaise Baileys <sup>TM/MC</sup> Chocolat cerise, ou de cr&egrave;me irlandaise Baileys <sup>TM/MC</sup>
-                    Caramel sal&eacute; au format de 750 mL. Le concours offre soixante-huit (68) grands prix, chacun
-                    compos&eacute; d'un (1) foyer portatif portant la marque Baileys<sup>TM/MC</sup> d'une valeur
-                    approximative au d&eacute;tail de 150,00 $. Trente-deux (32) prix hebdomadaires sont offerts, chacun
-                    compos&eacute; d'un jet&eacute; portant la marque Baileys<sup>TM/MC</sup> d'une valeur approximative
-                    au d&eacute;tail de 90,00 $. Les chances de gagner un prix hebdomadaire d&eacute;pendent du nombre
-                    de participations admissibles reçues, mais ne d&eacute;passeront pas 1/40 000 (rapportez-vous au r&egrave;glement
-                    int&eacute;gral pour conna&icirc;tre les dates applicables). Les chances de gagner un grand prix d&eacute;pendent
-                    du nombre de participations reçues mais pour chaque prix ne d&eacute;passeront pas 1/40 000. Vous
-                    devrez r&eacute;pondre correctement à une question d'habilet&eacute; math&eacute;matique pour
-                    gagner.
-                <p class="responsible legal18"><img src="images/18-legal.png"/></p>
-                <p class="responsible" style="float:right;"><img src="images/drinkResponsibily.png"/></p>
+            <div class="small-12 columns text-center">
+                <p class="contest-info">© 2016 Carter's, Inc. Carter's, Count on Carter's, Little Layette, Child of
+                    Mine, Just One You, Precious Firsts, If they could just stay little 'til their Carter's wear out,
+                    OshKosh, OshKosh B'gosh, and Genuine Kids are trademarks owned by subsidiaries of Carter's, Inc.</p>
+
+                <p class="contest-info"> Since 1895, OshKosh B’gosh has been the leader in manufacturing American kids
+                    clothes. We specialize
+                    in crafting high quality, affordable clothes for boys and girls that work on every level of kid’s
+                    lives. From playtime to bedtime, school and beyond, OshKosh strives to continue the legacy of
+                    producing fun, wearable clothes for kids that are made to last. OshKosh began creating kids jeans
+                    fashioned to look just like Dad’s iconic overalls. Fast forward over a hundred years, and OshKosh
+                    kids jeans are still one of our bestselling items. Manufactured with top quality fabrics, hardware
+                    and attention to detail so kids can live their lives while maintaining style and comfort. Over the
+                    years we’ve branched out into casualwear, swimwear, outerwear, playwear, dresses and even sleepwear.
+                    Kids are our inspiration so we take the time to think about the things that are important in a kids’
+                    life and we make exceptional clothes to meet those demands. At OshKosh B’gosh, we love kids and kids
+                    love our clothes.</p>
             </div>
         </div>
     </div>
-
-</div>
-</div>
-
-<div id="myModal" class="reveal-modal" data-reveal>
-    <h2>Comment obtenir un code NIP?</h2>
-    <p>Les codes NIP sont sur les collerettes attachées aux produits Baileys<sup
-            style="font-size: 10px; vertical-align: text-top;">®</sup> participants, vendus à la SAQ.<br>&nbsp;<br>Pour
-        obtenir un code NIP sans achat, inscrivez clairement sur une enveloppe préaffranchie votre prénom, nom de
-        famille et adresse postale complète, et faites-la parvenir avec une feuille de papier contenant votre numéro de
-        téléphone et date de naissance, à TRAFFIKGROUP, a/s Concours Savourez le froid, 559 College St., Suite 301,
-        Toronto, ON M6G 1A9. Assurez-vous d’affranchir suffisamment votre envelope.</p>
-    <p>Vous recevrez par la poste un (1) code NIP vous donnant droit à une participation au concours, jusqu’à épuisement
-        des codes. Une seule participation sans achat par semaine.</p>
-    <a class="close-reveal-modal">&#215;</a>
 </div>
 
 <script src="js/vendor/jquery.js"></script>
