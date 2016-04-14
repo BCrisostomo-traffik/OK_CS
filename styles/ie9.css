@@ -1,0 +1,40 @@
+/* all-IE */
+
+/* global */
+
+#agegate-form input [type="checkbox"], #registration-form input[type="checkbox"] {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px !important;
+    border-radius: 1px;
+    margin-left: 2px; 
+    -ms-transform: scale(2);
+    border: none;
+    background: none;
+}
+
+
+#agegate-form #submit-gateway, #submit {
+    background: #C0A267;
+    background: -webkit-linear-gradient(left, #a98c68, #edcc96 , #a98c68, #edcc96 , #a98c68); 
+    background: -o-linear-gradient(right, #a98c68, #edcc96 , #a98c68, #edcc96 , #a98c68);  
+    background: -moz-linear-gradient(right, #a98c68, #edcc96 , #a98c68, #edcc96 , #a98c68);  
+    background: linear-gradient(to right, #a98c68, #edcc96 , #a98c68, #edcc96 , #a98c68); 
+    color: #000000;
+    border: medium none;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;    
+    cursor: pointer;
+    font-family: 'Neutraface2DisplayTitling',sans-serif;
+    font-size: 23px;
+    letter-spacing: -1px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    padding: 10px 30px 4px 30px;
+    position: relative;
+    text-transform: uppercase;
+    width: auto;
+    text-decoration:none;
+}
