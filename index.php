@@ -107,32 +107,22 @@ require_once('utils.php');
                                 <input id="user_lastname" name="user[lastname]" type="text" g_placeholder="Last Name"/>
                             </div>
 
-                            <div class="large-12 columns">
+                            <div class="large-6 columns">
                                 <span>*</span>
                                 <input id="user_email" name="user[email]" type="text" g_placeholder="E-mail Address"/>
                             </div>
 
-
-
-
-
-
-
-
-
-                            <div class="small-12 medium-3 large-3 columns end">
+                            <div class="large-6 columns">
                                 <div class="form-item user-postal">
                                     <div class="required"></div>
                                     <span>*</span>
                                     <input id="user_postal" name="user[postal]" type="text"
-                                           g_placeholder="Code Postal"/>
+                                           g_placeholder="Postal Code"/>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row">
-
-
                             <div class="row">
                                 <div class="large-12 columns">
                                     <div class="form-item-agreement gchbx clearfix rulecbox">
