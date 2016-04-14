@@ -108,18 +108,43 @@ require_once('utils.php');
                             </div>
 
                             <div class="large-6 columns">
+                                <div class="required"></div>
                                 <span>*</span>
                                 <input id="user_email" name="user[email]" type="text" g_placeholder="E-mail Address"/>
                             </div>
 
                             <div class="large-6 columns">
-                                <div class="form-item user-postal">
-                                    <div class="required"></div>
+                                <div class="required"></div>
+                                <span>*</span>
+                                <input id="user_postal" name="user[postal]" type="text"
+                                       g_placeholder="Postal Code"/>
+                            </div>
+
+
+                            <div class="large-12 columns">
+                                <p>Or you could nominate a friend for a
+                                    chance to win her a Carter’s Oshkosh baby shower.
+                                </p>
+                              </div>
+
+
+                            <div class="large-6 columns">
+                                <div class="required"></div>
+                                <span>*</span>
+                                <input id="user_email" name="user[email]" type="text" g_placeholder="Nominee Name"/>
+                            </div>
+
+                            <div class="large-6 columns">
+                                <div class="required"></div>
+                                <div id="custom-selector-container-store">
                                     <span>*</span>
-                                    <input id="user_postal" name="user[postal]" type="text"
-                                           g_placeholder="Postal Code"/>
+                                    <select id="user_store" name="user[store]" class="styled">
+                                        <option value="0" selected disabled>Select a store</option>
+                                        <option value="CA">Canada</option>
+                                    </select>
                                 </div>
                             </div>
+
                         </div>
 
                         <div class="row">
