@@ -419,3 +419,12 @@ function twentysixteen_widget_tag_cloud_args( $args ) {
 	return $args;
 }
 add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
+
+
+
+/**
+ * Add site options
+ */
+if (function_exists("register_options_page")) {
+	register_options_page('Site Options');
+}
