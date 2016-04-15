@@ -89,9 +89,15 @@ require_once('utils.php');
                     <div id='form1' class="small-12 columns">
                         <div class="row">
                             <div class="small-12 columns">
-                                <h2>ENTREZ LES DONN&Eacute;ES SUIVANTES</h2>
-                                <span>*</span>
-                                <p style="position: relative; top: 7px; font-size: 11px;">Champs obligatoires</p>
+                                <h2>#CartersComingSoon</h2>
+                                <p>Enter for a chance to win a Carter’s Oshkosh baby shower at one of our many new
+                                    Canadian locations. Winners will also receive a $250.00 gift card to spend at any
+                                    Carter’s Oshkosh store, and prizes for each of your 10 guests.<br>
+                                    Fill out the form below to start.</p>
+                            </div>
+                            <div class="small-12 columns">
+                                <p style="position: relative; top: 7px; font-size: 11px;">Fill in the required
+                                    fields.</p>
                             </div>
 
                             <div class="large-6 columns">
@@ -125,7 +131,7 @@ require_once('utils.php');
                                 <p>Or you could nominate a friend for a
                                     chance to win her a Carter’s Oshkosh baby shower.
                                 </p>
-                              </div>
+                            </div>
 
 
                             <div class="large-6 columns">
@@ -155,15 +161,19 @@ require_once('utils.php');
                                         <span class="checkbox-ast" style="margin-top:2px;">*</span>
                                         <input id="agreement" type="checkbox" name="user_agreement" value="agreement"
                                                style="color:#000;"/>
-                                        <label style="font-family: arial,sans-serif;">Oui, j'ai compris le <a
-                                                href="rules_and_regulations.php" target="_blank">R&egrave;glement
-                                                officiel du concours</a> et la <a href="privacy.php" target="_blank">Politique
-                                                de confidentialit&eacute; de Diageo</a> et j'accepte de les
-                                            respecter.</label>
+                                        <label style="font-family: arial,sans-serif;">Agree to <a
+                                                href="rules_and_regulations.php" target="_blank">Rules and Regulations</a></label>
+                                    </div>
+                                    <div class="form-item-agreement gchbx clearfix rulecbox">
+                                        <div class="required"></div>
+                                        <span class="checkbox-ast" style="margin-top:2px;">*</span>
+                                        <input id="agreement" type="checkbox" name="user_agreement" value="agreement"
+                                               style="color:#000;"/>
+                                        <label style="font-family: arial,sans-serif;">I would like to receive emails on promotions and new products</label>
                                     </div>
 
                                     <div id="enter-button" class="" style="text-align:center;">
-                                        <a href="submit.php" id='submit' class="button">Soumettre <img
+                                        <a href="submit.php" id='submit' class="button">Submit <img
                                                 src="images/arrow.png"></a>
                                     </div>
                                 </div>
