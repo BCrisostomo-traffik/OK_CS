@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Neutraface2DisplayTitling';
+    src: url('neutra2display-titling.eot');
+    src: url('neutra2display-titling.eot') format('embedded-opentype'),
+         url('neutra2display-titling.woff2') format('woff2'),
+         url('neutra2display-titling.woff') format('woff'),
+         url('neutra2display-titling.ttf') format('truetype'),
+         url('neutra2display-titling.svg#Neutraface2DisplayTitling') format('svg');
+}

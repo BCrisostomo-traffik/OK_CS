@@ -1,0 +1,1169 @@
+@charset "UTF-8";
+
+/*----- Fonts -----*/
+
+@font-face {
+    font-family: 'Gotham-Bold';
+    src: url('../fonts/Gotham-Bold_0.eot');
+    src: url('../fonts/Gotham-Bold_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Bold_0.woff') format('woff'),
+         url('../fonts/Gotham-Bold_0.ttf') format('truetype'),
+         url('../fonts/Gotham-Bold_0.svg#Gotham-Bold_0') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham-Medium';
+    src: url('../fonts/Gotham-Medium_0.eot');
+    src: url('../fonts/Gotham-Medium_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Gotham-Medium_0.woff') format('woff'),
+         url('../fonts/Gotham-Medium_0.ttf') format('truetype'),
+         url('../fonts/Gotham-Medium_0.svg#Gotham-Medium_0') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
+
+/*----- Global -----*/
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box; 
+}
+
+.clearfix:after, .wrap:after, .splash:after, .header:after, ul:after, .footer:after, .header ul li:after, .content:after, .content .left ul.buttons-wrap:after, .video-link-wrap:after, .prizing .content .right .prize-list li:after, .video .content:after, 
+.form-item-agreement:after, .registration .bottomContent form .birthdate:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+
+body {
+    font-family: 'Gotham-Medium', sans-serif;
+    -webkit-overflow-scrolling: touch;
+    margin: 0px;
+    padding: 0px;
+    background-color: #26215c;
+    color: #fff;
+}
+
+.wrap {
+    background: url("../images/rink-bg.jpg") top center no-repeat;
+    width: 100%;
+    height:auto;    
+    background-size: cover;
+}
+
+.splash {
+    background: url("../images/rink-bg-wbottle.jpg") top center no-repeat;
+    width: 100%;
+    height:auto;    
+    background-size: auto auto;
+}
+
+.footer {
+    clear: both;
+}
+
+    .footer ul {
+        padding: 20px;
+    }
+
+    .footer ul li {
+        float: left;
+        margin-right: 20px;
+    }
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+    ul li {
+        list-style: none;
+    }
+
+sup {
+    vertical-align: top;
+}
+
+.button {
+    font-family: 'Gotham-Bold', sans-serif;
+    border: none;
+    width: auto;
+    font-size: 23px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 26px;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+    background: #26215c;
+    -webkit-border-radius: 4px; 
+    border-radius: 4px;
+}
+
+.button.medium {
+    font-size: 15px;
+}
+
+/*----- Form Styles -----*/
+
+form label, form input, form select {
+    display: block;
+    width: 100%;
+    font-size: 10px;
+}
+
+form label {
+    margin-bottom: 12px;
+}
+
+form label[for="country-select"], form label[for="day-select"] {
+    font-family: 'Gotham-Bold', sans-serif;
+    text-transform: uppercase;
+}
+
+form label[for="remember-me"] {
+    font-family: 'Gotham-Medium', sans-serif;
+}
+
+    form label[for="remember-me"] a {
+        color: #fff;
+    }
+
+    form #remember-me {
+        clear: both;
+    }
+
+form input, form select {
+
+    color: #26215c;
+    text-transform: uppercase;
+    padding: 4px;
+    font-size: 12px;
+    background: #fff;
+}
+
+form select {
+    margin-bottom: 28px;
+    border: 1px solid #625f58;
+}
+
+form select option {
+    background: #fff;
+}
+
+form input[type="checkbox"] {
+    float: left;
+    width: auto;
+    margin-right: 10px !important;
+}
+
+.province-div {
+    margin-top: 15px;
+}
+
+.submit-btn-wrap {
+    position: relative;
+}
+
+form input[type="submit"], 
+.index .button,
+.registration .button {
+    font-family: 'Gotham-Bold', sans-serif;
+    border: none;
+    width: auto;
+    font-size: 23px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    cursor: pointer;
+    padding: 10px 30px;
+    color: #26215c;
+    position: relative;
+    background: #c0a267;
+    margin:auto;
+    
+    -webkit-border-radius: 4px; 
+    border-radius: 4px;
+}
+
+.dob-inputs > div {
+    width: 32%;
+    margin-right: 2%;
+    float: left;
+}
+
+.dob-inputs > div:last-child {
+    margin-right: 0;
+}
+
+.req-error {
+    outline: 2px solid #df2030;
+}
+
+#error_field p {
+    color: #df2030;
+    font-size: 20px;
+}
+
+
+/*----- Module Specific -----*/
+
+.header {
+            margin-top: 0px;
+            margin-bottom: 0px;
+            width: 100%;
+            height: 45px;
+            background: #26215c;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #c1a368;                      
+        }
+
+        .header ul {
+            background: #26215c;
+            max-width: 960px;
+            width: 100%;
+            margin: auto;
+        }
+
+        .header ul li {
+            float: left;
+            margin-left: 0px;
+        }
+
+        .header ul li a {
+            font-family: 'Gotham-Medium', sans-serif;
+            font-size: 0.88em;
+            text-transform: uppercase;
+            color: #fff;
+            text-decoration: none;
+            border-bottom: 2px solid #ccc;
+            float: left;
+            padding: 10px 0px 2px;
+        }
+
+        .header ul li.social-icons {
+            float: right;
+            list-style:none;
+            width: 55px;
+            height: 20px; 
+            margin-top: 10px;
+            margin-right: 2%;                   
+        }
+
+        .header ul li.social-icons a {
+            width: 55px;
+            height: 20px;
+            display: block;
+            border-bottom: none;
+            
+        }
+
+        .header ul li.social-icons a.twitter {
+            background: url("../images/twitter-btn.png") top left no-repeat;
+            margin-left: 10px;
+        }
+
+        .header ul li.social-icons a.facebook {
+            background: url("../images/fb-btn.png") top right no-repeat;
+        }
+
+.content {
+    position: relative;
+    padding-top: 50px;
+    max-width: 960px;
+    width: 100%;
+    margin: auto;
+}
+
+.content .left {
+    float: left;
+    width: 55%;
+}
+        
+        .content .left .mobile {
+            display: none;
+        }
+
+        .content .left img {
+            width: 100%;
+            max-width: 349px;
+            height: auto;
+            display: block;
+            margin: auto;
+            margin-top: -49px;
+        }
+
+        .content .left p {
+            font-family: 'Gotham-Medium', sans-serif;
+            font-size: 14px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        .content .left .enter-contest {
+            font-family: 'Gotham-Bold', sans-serif;
+            font-size: 22px;
+            text-transform: uppercase;
+            text-align: center;
+            line-height: 20px;
+            color: #25205a;
+            margin: 34px 0 30px;
+        }
+
+            .content .left .enter-contest img {
+                max-width: 580px;
+                margin-top: 20px;
+            }
+
+                        .content .left ul.buttons-wrap li:first-child {
+                            margin-right: 8px;
+                        }
+
+                        .content .left ul.buttons-wrap li:last-child {
+                            margin-left: 8px;
+                        }
+
+                        .content .left ul.buttons-wrap li a {
+                            float: left;
+                        }
+
+        .content .agreement, .rules .content .agreement {
+            clear: left;
+            color: #26215c;
+            font-size: 16px;    
+            text-align: center;
+            margin: -20px 0 30px 0;
+        }
+
+        .content .left h2 {
+            font-family: 'Gotham-Medium', sans-serif;   
+            font-size: 22px;
+            color: #DBC088;
+            text-align: center;
+        }
+
+.content .left h2, .content .right h2, .content .right form p {         
+    text-transform: uppercase;
+}
+
+.content .right {
+    float: right;
+    width: 37%;
+}
+
+.content .right .bottom {
+    position: absolute;
+    bottom: 30px;
+    right: 100px;
+}
+
+.content .right h2 {
+    font-family: 'Gotham-Bold', sans-serif;   
+    font-size: 20px;
+    color: #c0a267;
+    text-align: left;
+}
+
+.content .right img.hero-image {
+    max-width: 461px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.content .right form {
+    margin-top: -20px;
+    background: #26215c;
+    padding: 10px 20px;
+    width: 100%;
+    height: 460px;
+}
+
+.content .right form select {
+    margin-bottom: 8px;
+    border: 2px solid #c1a368;
+}
+
+.content .right form label[for="country-select"], 
+form label[for="day-select"] {
+    margin-top: 30px;
+}
+
+.content .right form input[type="checkbox"] { 
+    margin-top: 15px;
+}
+
+.content .right form label[for="remember-me"] {
+    margin-top: 70px;
+}
+
+.content .right form p, 
+.content .right form label[for="remember-me"] {
+    font-size: 10px;
+}
+
+.content .right form input[type="submit"] {
+    margin-top: 10px;
+}
+
+.content .right .submit-btn-wrap:after {
+    top:  6px;
+    width:100%;
+}
+
+.bottomContent {
+    border-top: 3px solid #c1a368;
+    -webkit-box-shadow: 0px -2px 7px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px -2px 7px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px -2px 7px rgba(50, 50, 50, 0.75); 
+    background: #26215c;    
+}
+
+.index .bottomContent h2,
+.registration .bottomContent h2,
+.registration .bottomContent form span {
+    font-size: 16px;
+    color: #c0a267;
+    font-family: 'Gotham-Bold', sans-serif;   
+}
+
+.congratulations .bottomContent,
+.closed .bottomContent {
+    text-align: center; 
+}
+
+.congratulations .bottomContent h2,
+.closed .bottomContent h2 {
+    font-size: 32px;
+    font-family: 'Gotham-Bold', sans-serif;    
+    color: #c0a267;
+}
+
+.congratulations .bottomContent .bottomDetails,
+.closed .bottomContent .bottomDetails {
+    font-size: 16px;
+    font-family: 'Gotham-Medium', sans-serif;   
+    color: #fff;
+}
+
+.index .bottomContent .section-one,
+.index .bottomContent .section-two,
+.registration .bottomContent form .section-one,
+.registration .bottomContent form .section-two {
+    width: 30%;
+    float:left;
+}
+
+.index .bottomContent .section-three,
+.registration .bottomContent form .section-three {
+    width: 30%;
+    float:right;
+}
+
+.bottomContent .bottomDetails {
+    width: 75%;
+    margin: auto;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.index .bottomContent h2 {
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+.index .bottomContent .section-one {
+    margin-left: 10%;
+}
+
+.index .bottomContent .section-two p {
+    margin-top: -5px;
+} 
+
+.index .bottomContent .section-two p:last-child {
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.index .bottomContent .section-three p {
+    margin-top: 85px;
+}
+
+.index .bottomContent span {
+    float: left;
+    margin-left: -15px;
+    margin-top: 5px;
+    -moz-border-radius: 0px/0px;
+    -webkit-border-radius: 0px 0px;
+    border-radius: 0px/0px;
+    width:5px;
+    height:5px;      
+    background: #c0a267;     
+}
+
+.registration .content {
+    margin: auto;
+}
+.registration .content .left h2 {
+    color: #fff;
+    font-size: 14px;
+    margin: 30px 0px;
+}
+
+.registration .bottomContent form {
+    position: relative;    
+    width: 75%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.registration .bottomContent form label {
+    color: #fff;
+    float: left;
+    margin: 0 0 12px;
+    width: 90%;
+}
+
+    .registration .bottomContent form label a {
+        color: #fff;
+    }
+
+.registration .bottomContent form .inputlabel {
+    margin: 0px;
+    color: #fff;
+    width: auto;
+}
+
+.registration .bottomContent form select, 
+.registration .bottomContent form input {
+    margin: 0px;
+    margin-bottom: 14px;
+}
+
+.registration .bottomContent form input,
+.registration .bottomContent form select {
+    padding: 5px;
+}
+
+.registration .bottomContent form input {
+    border: 1px solid #625F58;
+}
+
+.registration .bottomContent form .section-one {
+    margin-left: 2%;
+}
+
+.registration .bottomContent form .birthdate select {
+    width: 100%;
+    float: left;
+}
+
+.registration .bottomContent form .pin-number input {
+    margin-right: 2%;
+    width: 75%;
+}
+
+.registration .bottomContent form .pin-number p {
+    color: #fff;
+    font-size: 12px;
+    width: 75%;
+}
+
+.registration .bottomContent form span {
+    float: left;
+    font-size: 18px;
+    margin-left: -15px;
+}
+
+.registration .bottomContent form .user-firstname {
+    width: 100%;
+    float: left;
+}
+
+.registration .bottomContent form .user-lastname {
+    clear: both;
+}
+
+.registration .bottomContent form .user-city {
+    width: 54%;
+    float: left;
+    margin-right: 8%; 
+}
+
+.registration .bottomContent form .user-postal {
+    width: 38%; 
+    float: left;
+}
+
+.registration .bottomContent form .user-country {
+    width: 42%; 
+    float: left; 
+    margin-right: 9%;    
+}
+
+.registration .bottomContent form .user-province {
+    width: 49%; 
+    float: left; 
+
+}
+
+.registration .bottomContent form .birthdate {
+    margin-bottom: 34px;
+}
+
+.registration .bottomContent form .birthdate .inputlabel {
+    float: left;
+    margin-top: 12px;
+    font-size: 12px;
+    text-align: left;
+    width: 28%;
+}
+
+.registration .bottomContent form #enter-button {
+    float: left;
+    margin-top: 30px;
+}
+
+.registration .bottomContent .form-item-agreement {
+    margin-bottom: 6px;
+}
+
+.nhl-team-select {
+    width: 100%;
+    float: left;
+    margin-right: 0;
+    margin-bottom: 12px;
+}
+
+.congratulations .content .left h2 {
+    color: #fff;
+    margin: 30px 0px 30px;
+}
+
+.congratulations .content .left p {
+    color: #DBC088;
+    margin-bottom: 30px;
+}
+
+.closed .content .left h2 {
+    margin: 100px 0px 0px;
+}
+
+.privacy .bottomContent p, .rules .bottomContent p,
+.privacy .bottomContent ol, .rules .bottomContent ol,
+.privacy .bottomContent ul, .rules .bottomContent ul,
+.privacy .bottomContent li, .rules .bottomContent li,
+.privacy .bottomContent h1, .rules .bottomContent h1,
+.privacy .bottomContent h2, .rules .bottomContent h2,
+.privacy .bottomContent h3, .rules .bottomContent h3 {
+    color: #fff;
+    margin: 2% 5%;
+    font-family: arial, helvetica, sans-serif;    
+}
+
+.privacy .bottomContent h1, .rules .bottomContent h1,
+.privacy .bottomContent h2, .rules .bottomContent h2,
+.privacy .bottomContent h3, .rules .bottomContent h3,
+.privacy .bottomContent a, .rules .bottomContent a {
+    color: #fff;
+    font-family: 'Gotham-Bold', sans-serif;
+}
+
+.privacy .bottomContent h1, .rules .bottomContent h1,
+.privacy .bottomContent p, .rules .bottomContent p {
+    margin-bottom: 20px;    
+}
+
+.privacy .bottomContent h2, .rules .bottomContent h2 {
+    font-size: 20px;
+}
+
+.footer {
+    margin-top: 60px;
+    display: block;
+}
+        .divider {
+            width: 80%;
+            margin: auto;
+            height: 2px;
+
+            background: -webkit-linear-gradient(left, #26215c, #c0a267, #c0a267, #c0a267, #26215c); /* For Safari */
+            background: -o-linear-gradient(left, #26215c, #c0a267, #c0a267, #c0a267, #26215c); /* For Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(left, #26215c, #c0a267, #c0a267, #c0a267, #26215c); /* For Fx 3.6 to 15 */
+            background: linear-gradient(to right, #26215c, #c0a267, #c0a267, #c0a267, #26215c); /* Standard syntax (must be last) */
+        }
+
+        .footer ul {
+            text-align: center;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            float: none;
+            border-right: 1px solid #fff;
+            padding-right: 25px;
+        }
+
+        .footer ul li:last-child {
+            padding-right: 0px;
+            border: none;
+        }
+
+        .footer ul li a {
+            font-family: 'Gotham-Medium', sans-serif;
+            color: #fff;
+        }
+
+        .footer .copyright {
+            color: #fff;
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .footer p.contest-info {
+            font-size: 10px;
+            float: left;
+            color: #fff;
+            margin-top: 40px;            
+            text-align: left;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        
+        .footer p.contest-info img {
+            padding: 0 20px 20px 0;
+            float: left;
+        }
+
+        .footer .responsible {
+            margin-right: 10%;
+        }
+
+        body.rules .bottomContent .footer ul li,
+        body.privacy .bottomContent .footer ul li {
+            margin: 0;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+
+@media all and (min-width : 1800px) {
+    .index .bottomContent .bottomDetails {
+        width: 60%;
+    } 
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media all and (min-width : 768px) and (max-width : 1024px) {
+
+        .content .left {
+            float: left;
+            text-align: center;
+        }
+
+            .content .left img {
+                width: 100%;
+                max-width: 311px; /* 90% of original image*/
+                height: auto;
+                display: block;
+                margin: auto;
+                margin-top: -20px;
+                margin-left: 20%;
+            }
+
+            .content .left .enter-contest {
+                margin: 34px 0px 0px;
+            }
+
+                .content .left .enter-contest img {
+                    max-width: 493px;
+                    margin-top: 10px;
+                    margin-left: 0px;
+                }
+    
+        .content .left .mobile {
+            display: block;
+            margin-top: 38px;
+        }
+
+        .content .right {
+            float: right;
+            padding-left: 0px;
+        }
+
+        .content .right form {
+            margin-top: 15px;
+          
+        }
+
+        .content .agreement {
+            width: 100%;
+            padding: 3px 0;
+            margin-top: 0px;
+        }
+
+        .content, .footer {
+            padding: 20px;
+        }
+
+        .congratulations .content .left ul.buttons-wrap li {
+            float: none;
+            display: block;
+            margin: auto;
+        }
+
+        .closed .content .left h2 {
+            margin: 40px 0px 0px;
+        }
+
+        .closed .content .left p {
+            margin-bottom: 40px;
+        }
+
+        .index .button {
+            font-size: 20px;
+            letter-spacing: -1px;
+            cursor: pointer;
+            padding: 10px 20px;
+            color: #26215c;
+            position: relative;
+            background: #c0a267;
+            -webkit-border-radius: 4px;
+            border-radius: 4px;
+        }
+
+        .index .bottomContent p {
+            margin-bottom: 16px;
+        }
+
+        .index .bottomContent .bottomDetails {
+            width: 70%;
+        }
+
+        .registration .bottomContent form {
+            width: 85%;
+        }
+
+        .index .bottomContent .section-one,
+        .registration .bottomContent form .section-one {
+            position: relative;
+            width: 61%;
+            top: 0px;
+            left: 0px;
+            margin-left: 0px;
+            float: left;                        
+        }
+
+        .index .bottomContent .section-two,
+        .registration .bottomContent form .section-two {
+            width: 46%;
+            margin-top: -153px;
+            float: right; 
+        }
+
+        .index .bottomContent .section-three,
+        .registration .bottomContent form .section-three {
+            width: 40%;           
+            margin-right: 2%; 
+            float: left; 
+        }
+
+        .index .bottomContent .section-two {
+            margin-top: -180px;
+        }
+
+        .index .bottomContent .section-three p {
+            margin-top: 35px;
+        }
+
+        .footer {
+            margin-top: 0px;
+            padding-top: 40px;
+        }
+
+}
+
+@media screen and (width : 768px) {
+    
+    .splash {
+        background: url("../images/rink-bg-wbottle_tabPort.jpg") #e3e9ef no-repeat;
+        background-position: center 45px;
+        width: 100%;
+        height:auto;  
+        }
+    
+    .content .left img {
+        margin-left: 13%;
+    }        
+
+        .content .left .enter-contest img {
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+
+        .agegate .wrap .content .left .enter-contest img {
+            margin-top: 80px;
+            margin-bottom: 20px;
+        }        
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width: 320px) and (max-height : 640px) {
+
+        .wrap {
+            background: url("../images/rink-bg_mobile.jpg") #26215c no-repeat;
+            /*background-position: center 0px;*/
+            width: 100%;
+            height:auto;
+            background-size: 100%;   
+        }
+
+        .splash {
+            background: url("../images/rink-bg-wbottle_mobile.jpg") #e3e9ef no-repeat;
+            background-position: center 45px;
+            width: 100%;
+            height:auto;  
+        }
+
+        .header ul li {
+            margin-left: 10px;
+        }
+
+        .content .agreement {
+            width: 100%;
+            padding: 30px 0;
+        }
+
+        .content > div {
+            width: 100%;
+        }
+
+        .content .right {
+            width: 100%;
+        }
+
+        .content .left {
+            float: none;
+            text-align: center;
+            width:100%;
+        }
+
+                .content .left .enter-contest {
+                    margin: 34px 0px 0px;
+                }
+                
+                .content .left img {
+                    display: none;
+                }
+
+                .age-gate .content .left .enter-contest img,
+                .age-gate .content .left p.agreement,
+                body.index .content .left .enter-contest img,
+                body.index .content .left p.agreement,
+                body.registration .content .left .enter-contest img,
+                body.registration .content .left p.agreement,
+                body.rules .content .left .enter-contest img,
+                body.rules .content .left p.agreement,
+                body.privacy .content .left .enter-contest img,
+                body.privacy .content .left p.agreement {
+                    display: block;
+                    position: relative;
+                    margin-top: -40px;
+                }
+
+                .privacy .bottomContent h1, .rules .bottomContent h1, 
+                .privacy .bottomContent p, .rules .bottomContent p {
+                    margin-top: 20px;
+                    padding-top: 20px;
+                }
+
+                .age-gate .content .left .enter-contest img {
+                    top: 150px;
+                }
+                
+                .age-gate .content .left p.agreement {
+                    top: 390px;
+                    bottom: 0;
+                    height: 150px;
+                }
+
+                body.index .content .left p.enter-contest img {
+                     bottom: 25px;
+                     max-width: 340px;
+                }
+
+                body.index .content .left p.agreement {
+                     bottom: 20px;
+                }        
+
+                .index .button {
+                    font-size: 20px;
+                }
+
+
+                body.registration .content .left .enter-contest img,
+                body.rules .content .left .enter-contest img,
+                body.privacy .content .left .enter-contest img {
+                    display: block;
+                    bottom: 90px;
+                }
+
+                body.registration .content .left p.agreement,
+                body.rules .content .left p.agreement,
+                body.privacy .content .left p.agreement {
+                     bottom: -20px;
+                }
+
+                .content .left p.agreement {
+                    bottom: 15px;
+                    margin-left: 5%;
+                    width: 90%;
+                    font-size: 12px;
+                }
+                
+                .content .right form {
+                    margin-top: 58px;
+                    background: none repeat scroll 0% 0% rgb(38, 33, 92);
+                    padding: 10px 20px;
+                    width: 100%;
+                    height: 460px;
+                }
+
+                .content .right form input[type="submit"] {
+                    
+                }
+
+                .content .left ul.buttons-wrap {
+                    text-align: left;
+                    margin-top: 20px;
+                }
+
+                .content .left ul.buttons-wrap li {
+                    width: 48%;
+                    float: left;
+                }
+
+                        .content .left ul.buttons-wrap li:first-child {
+                            margin-right: 2%;
+                        }
+
+                        .content .left ul.buttons-wrap li:last-child {
+                            margin-left: 2%;
+                        }
+
+                        .content .left ul.buttons-wrap li a {
+                            font-size: 16px;
+                            width: 100%;
+                            text-align: center;
+                        }
+
+        .content .right .bottom {
+            right:23%;
+            bottom: 10px;
+        }
+
+        .index .content {
+
+            height: 690px;
+        }
+
+        body.registration .content, body.rules .content, 
+        body.privacy .content {
+            height:860px;
+        }
+
+        .congratulations .content .left ul.buttons-wrap li {
+            float: none;
+            display: block;
+            margin: auto;
+        }
+
+        .closed .content .left h2 {
+            margin: 40px 0px 0px;
+        }
+
+        .closed .content .left p {
+            margin-bottom: 40px;
+        }
+            
+        .content .right {
+            float: none;
+            padding-left: 0px;
+            width: 100%;
+        }
+
+        .bottomContent {
+            border-top: 0px;
+            -webkit-box-shadow: 0px 0px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    0px 0px 0px rgba(50, 50, 50, 0.75);
+            box-shadow:         0px 0px 0px rgba(50, 50, 50, 0.75); 
+        }
+
+        .index .bottomContent .section-one,
+        .index .bottomContent .section-two,
+        .index .bottomContent .section-three,
+        .registration .bottomContent form .section-one,
+        .registration .bottomContent form .section-two,
+        .registration .bottomContent form .section-three {
+            width: 100%;
+            margin-left: 0px;
+        }      
+
+        .index .bottomContent .section-two,
+        .index .bottomContent .section-three {
+            margin-top: -80px;
+        }
+
+        .registration .bottomContent form .section-three {
+            margin-top: -20px;
+        }
+
+        .registration .bottomContent form .pin-number input,
+        .registration .bottomContent form .pin-number p {
+            width: 100%;
+        }
+
+        .privacy .bottomContent h1, .rules .bottomContent h1 {
+            font-size: 20px;
+        }
+
+        .privacy .bottomContent h2, .rules .bottomContent h2 {
+            font-size: 16px;
+        }
+
+        .privacy .bottomContent p, .rules .bottomContent p,
+        .privacy .bottomContent ol, .rules .bottomContent ol,
+        .privacy .bottomContent ul, .rules .bottomContent ul,
+        .privacy .bottomContent li, .rules .bottomContent li {
+            font-size: 12px;
+        }
+
+        .footer {
+            margin-top: 0px;
+            padding-top: 40px;
+        }
+
+        .footer ul {
+            font-size: 13px;
+        }
+
+        .footer ul li{
+            margin-right: 0px;
+            padding: 5px 10px;
+        }        
+
+        .divider {
+            width: 100%;
+        }        
+            
+        .responsible img {
+            width: 90%;
+        }
+}

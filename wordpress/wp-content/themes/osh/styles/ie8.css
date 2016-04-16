@@ -1,0 +1,14 @@
+.age-gate {
+    background: #000;
+    height: 1000px;
+    left: 0;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 20000;
+    color: #fff;
+    overflow-y: visible;
+    -webkit-overflow-scrolling: touch;
+    display: none;
+}
