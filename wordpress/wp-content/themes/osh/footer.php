@@ -1,59 +1,33 @@
 <?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after
- *
- * @package WordPress
- * @subpackage Twenty_Sixteen
- * @since Twenty Sixteen 1.0
- */
+global $language;
+
+
+switch ($language) {
+    case "en":
+        ?>
+        © 2016 Carter's, Inc. Carter's, Count on Carter's, Little Layette, Child of Mine, Just One You, Precious Firsts, If they could just stay little 'til their Carter's wear out, OshKosh, OshKosh B'gosh, and Genuine Kids are trademarks owned by subsidiaries of Carter's, Inc.
+
+        Since 1895, OshKosh B’gosh has been the leader in manufacturing American kids clothes. We specialize in crafting high quality, affordable clothes for boys and girls that work on every level of kid’s lives. From playtime to bedtime, school and beyond, OshKosh strives to continue the legacy of producing fun, wearable clothes for kids that are made to last. OshKosh began creating kids jeans fashioned to look just like Dad’s iconic overalls. Fast forward over a hundred years, and OshKosh kids jeans are still one of our bestselling items. Manufactured with top quality fabrics, hardware and attention to detail so kids can live their lives while maintaining style and comfort. Over the years we’ve branched out into casualwear, swimwear, outerwear, playwear, dresses and even sleepwear. Kids are our inspiration so we take the time to think about the things that are important in a kids’ life and we make exceptional clothes to meet those demands. At OshKosh B’gosh, we love kids and kids love our clothes.
+
+        <?php
+        break;
+    case "fr":
+        ?>
+
+        fr-© 2016 Carter's, Inc. Carter's, Count on Carter's, Little Layette, Child of Mine, Just One You, Precious Firsts, If they could just stay little 'til their Carter's wear out, OshKosh, OshKosh B'gosh, and Genuine Kids are trademarks owned by subsidiaries of Carter's, Inc.
+
+        Since 1895, OshKosh B’gosh has been the leader in manufacturing American kids clothes. We specialize in crafting high quality, affordable clothes for boys and girls that work on every level of kid’s lives. From playtime to bedtime, school and beyond, OshKosh strives to continue the legacy of producing fun, wearable clothes for kids that are made to last. OshKosh began creating kids jeans fashioned to look just like Dad’s iconic overalls. Fast forward over a hundred years, and OshKosh kids jeans are still one of our bestselling items. Manufactured with top quality fabrics, hardware and attention to detail so kids can live their lives while maintaining style and comfort. Over the years we’ve branched out into casualwear, swimwear, outerwear, playwear, dresses and even sleepwear. Kids are our inspiration so we take the time to think about the things that are important in a kids’ life and we make exceptional clothes to meet those demands. At OshKosh B’gosh, we love kids and kids love our clothes.
+
+        <?php
+        break;
+}
 ?>
 
-		</div><!-- .site-content -->
 
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<?php if ( has_nav_menu( 'primary' ) ) : ?>
-				<nav class="main-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Primary Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'primary',
-							'menu_class'     => 'primary-menu',
-						 ) );
-					?>
-				</nav><!-- .main-navigation -->
-			<?php endif; ?>
+</div>
 
-			<?php if ( has_nav_menu( 'social' ) ) : ?>
-				<nav class="social-navigation" role="navigation" aria-label="<?php esc_attr_e( 'Footer Social Links Menu', 'twentysixteen' ); ?>">
-					<?php
-						wp_nav_menu( array(
-							'theme_location' => 'social',
-							'menu_class'     => 'social-links-menu',
-							'depth'          => 1,
-							'link_before'    => '<span class="screen-reader-text">',
-							'link_after'     => '</span>',
-						) );
-					?>
-				</nav><!-- .social-navigation -->
-			<?php endif; ?>
-
-			<div class="site-info">
-				<?php
-					/**
-					 * Fires before the twentysixteen footer text for footer customization.
-					 *
-					 * @since Twenty Sixteen 1.0
-					 */
-					do_action( 'twentysixteen_credits' );
-				?>
-				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'twentysixteen' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentysixteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- .site-footer -->
-	</div><!-- .site-inner -->
-</div><!-- .site -->
 
 <?php wp_footer(); ?>
+
 </body>
 </html>
