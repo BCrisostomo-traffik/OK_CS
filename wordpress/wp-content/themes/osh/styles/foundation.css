@@ -2797,9 +2797,8 @@ th.hide-for-touch {
 .text-center p.neutraTilt { color:#a98e5f; }
 
 .wrap{ 
-  background: url("../images/baileys-bg.jpg") no-repeat scroll center / cover rgba(0, 0, 0, 0);
   background-position:0 0px;
-  background-color: #000;
+  background-color: #f5fbfe;
   max-height: 1000px;
   width: 100%;
   height: 100%;
@@ -3434,3 +3433,9 @@ body.privacy .footer ul li {
     border: none;
     background: none;
 }*/
+
+
+
+#main{
+  margin:auto;
+}

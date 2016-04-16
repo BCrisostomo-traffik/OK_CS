@@ -58,9 +58,8 @@
 
 <body <?php body_class(); ?>>
 
-<div class="large-3 columns bottle hide-for-medium-down"><img style="width: 130%;" src="<?php echo get_template_directory_uri() ?>/images/bottle.png"></div>
 <div class="wrap">
-    <div class="large-6 columns blackbg">
+    <div id="main" class="large-6 columns blackbg">
 
         <div class="header">
             <div class="row">

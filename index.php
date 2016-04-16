@@ -60,130 +60,132 @@ require_once('utils.php');
 </head>
 <body class="">
 
-<div class="large-3 columns bottle hide-for-medium-down"><img style="width: 130%;" src="images/bottle.png"></div>
-<div class="wrap">
-    <div class="large-6 columns blackbg">
+    <div class="large-3 columns bottle hide-for-medium-down"><img style="width: 130%;" src="images/bottle.png"></div>
+    <div class="wrap">
+        <div class="large-6 columns blackbg">
 
-        <div class="header">
-            <div class="row">
-                <div class="medium-12 columns hide-for-small logo">
-                    <img src="images/baileys-logo.png">
-                </div>
-                <div class="medium-12 columns hide-for-small cta">
-                    <img src="images/cta-image-desktop.png">
-                </div>
-                <div class="medium-12 columns hide-for-medium-up">
-                    <img src="images/cta-image-mobile.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="small-12 columns">
-            <div class="divider"></div>
-        </div>
-
-        <div class="small-12 large-push-1 large-10 columns end" style="z-index:999;">
-            <div id='registration-form'>
-                <form id="agfrom" action="submit.php" method="POST">
-
-                    <div id='form1' class="small-12 columns">
-                        <div class="row">
-                            <div class="small-12 columns">
-                                <h2>#CartersComingSoon</h2>
-                                <p>Enter for a chance to win a Carter’s Oshkosh baby shower at one of our many new
-                                    Canadian locations. Winners will also receive a $250.00 gift card to spend at any
-                                    Carter’s Oshkosh store, and prizes for each of your 10 guests.<br>
-                                    Fill out the form below to start.</p>
-                            </div>
-                            <div class="small-12 columns">
-                                <p style="position: relative; top: 7px; font-size: 11px;">Fill in the required
-                                    fields.</p>
-                            </div>
-
-                            <div class="large-6 columns">
-                                <div class="required"></div>
-                                <span>*</span>
-                                <input id="user_firstname" name="user[firstname]" type="text"
-                                       g_placeholder="First Name"/>
-                            </div>
-
-                            <div class="large-6 columns">
-                                <div class="required"></div>
-                                <span>*</span>
-                                <input id="user_lastname" name="user[lastname]" type="text" g_placeholder="Last Name"/>
-                            </div>
-
-                            <div class="large-6 columns">
-                                <div class="required"></div>
-                                <span>*</span>
-                                <input id="user_email" name="user[email]" type="text" g_placeholder="E-mail Address"/>
-                            </div>
-
-                            <div class="large-6 columns">
-                                <div class="required"></div>
-                                <span>*</span>
-                                <input id="user_postal" name="user[postal]" type="text"
-                                       g_placeholder="Postal Code"/>
-                            </div>
-
-
-                            <div class="large-12 columns">
-                                <p>Or you could nominate a friend for a
-                                    chance to win her a Carter’s Oshkosh baby shower.
-                                </p>
-                            </div>
-
-
-                            <div class="large-6 columns">
-                                <div class="required"></div>
-                                <span>*</span>
-                                <input id="user_email" name="user[email]" type="text" g_placeholder="Nominee Name"/>
-                            </div>
-
-                            <div class="large-6 columns">
-                                <div class="required"></div>
-                                <div id="custom-selector-container-store">
-                                    <span>*</span>
-                                    <select id="user_store" name="user[store]" class="styled">
-                                        <option value="0" selected disabled>Select a store</option>
-                                        <option value="CA">Canada</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div class="row">
-                            <div class="row">
-                                <div class="large-12 columns">
-                                    <div class="form-item-agreement gchbx clearfix rulecbox">
-                                        <div class="required"></div>
-                                        <span class="checkbox-ast" style="margin-top:2px;">*</span>
-                                        <input id="agreement" type="checkbox" name="user_agreement" value="agreement"
-                                               style="color:#000;"/>
-                                        <label style="font-family: arial,sans-serif;">Agree to <a
-                                                href="rules_and_regulations.php" target="_blank">Rules and Regulations</a></label>
-                                    </div>
-                                    <div class="form-item-agreement gchbx clearfix rulecbox">
-                                        <div class="required"></div>
-                                        <span class="checkbox-ast" style="margin-top:2px;">*</span>
-                                        <input id="agreement" type="checkbox" name="user_agreement" value="agreement"
-                                               style="color:#000;"/>
-                                        <label style="font-family: arial,sans-serif;">I would like to receive emails on promotions and new products</label>
-                                    </div>
-
-                                    <div id="enter-button" class="" style="text-align:center;">
-                                        <a href="submit.php" id='submit' class="button">Submit <img
-                                                src="images/arrow.png"></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="header">
+                <div class="row">
+                    <div class="medium-12 columns hide-for-small logo">
+                        <img src="images/baileys-logo.png">
                     </div>
-                </form>
+                    <div class="medium-12 columns hide-for-small cta">
+                        <img src="images/cta-image-desktop.png">
+                    </div>
+                    <div class="medium-12 columns hide-for-medium-up">
+                        <img src="images/cta-image-mobile.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="small-12 columns">
+                <div class="divider"></div>
+            </div>
+
+            <div class="small-12 large-push-1 large-10 columns end" style="z-index:999;">
+                <div id='registration-form'>
+                    <form id="agfrom" action="submit.php" method="POST">
+
+                        <div id='form1' class="small-12 columns">
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <h2>#CartersComingSoon</h2>
+                                    <p>Enter for a chance to win a Carter’s Oshkosh baby shower at one of our many new
+                                        Canadian locations. Winners will also receive a $250.00 gift card to spend at any
+                                        Carter’s Oshkosh store, and prizes for each of your 10 guests.<br>
+                                        Fill out the form below to start.</p>
+                                </div>
+                                <div class="small-12 columns">
+                                    <p style="position: relative; top: 7px; font-size: 11px;">Fill in the required
+                                        fields.</p>
+                                </div>
+
+                                <div class="large-6 columns">
+                                    <div class="required"></div>
+                                    <span>*</span>
+                                    <input id="user_firstname" name="user[firstname]" type="text"
+                                           g_placeholder="First Name"/>
+                                </div>
+
+                                <div class="large-6 columns">
+                                    <div class="required"></div>
+                                    <span>*</span>
+                                    <input id="user_lastname" name="user[lastname]" type="text" g_placeholder="Last Name"/>
+                                </div>
+
+                                <div class="large-6 columns">
+                                    <div class="required"></div>
+                                    <span>*</span>
+                                    <input id="user_email" name="user[email]" type="text" g_placeholder="E-mail Address"/>
+                                </div>
+
+                                <div class="large-6 columns">
+                                    <div class="required"></div>
+                                    <span>*</span>
+                                    <input id="user_postal" name="user[postal]" type="text"
+                                           g_placeholder="Postal Code"/>
+                                </div>
+
+
+                                <div class="large-12 columns">
+                                    <p>Or you could nominate a friend for a
+                                        chance to win her a Carter’s Oshkosh baby shower.
+                                    </p>
+                                </div>
+
+
+                                <div class="large-6 columns">
+                                    <div class="required"></div>
+                                    <span>*</span>
+                                    <input id="user_email" name="user[email]" type="text" g_placeholder="Nominee Name"/>
+                                </div>
+
+                                <div class="large-6 columns">
+                                    <div class="required"></div>
+                                    <div id="custom-selector-container-store">
+                                        <span>*</span>
+                                        <select id="user_store" name="user[store]" class="styled">
+                                            <option value="0" selected disabled>Select a store</option>
+                                            <option value="CA">Canada</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+                                <div class="row">
+                                    <div class="large-12 columns">
+                                        <div class="form-item-agreement gchbx clearfix rulecbox">
+                                            <div class="required"></div>
+                                            <span class="checkbox-ast" style="margin-top:2px;">*</span>
+                                            <input id="agreement" type="checkbox" name="user_agreement" value="agreement"
+                                                   style="color:#000;"/>
+                                            <label style="font-family: arial,sans-serif;">Agree to <a
+                                                    href="rules_and_regulations.php" target="_blank">Rules and
+                                                    Regulations</a></label>
+                                        </div>
+                                        <div class="form-item-agreement gchbx clearfix rulecbox">
+                                            <div class="required"></div>
+                                            <span class="checkbox-ast" style="margin-top:2px;">*</span>
+                                            <input id="agreement" type="checkbox" name="user_agreement" value="agreement"
+                                                   style="color:#000;"/>
+                                            <label style="font-family: arial,sans-serif;">I would like to receive emails on
+                                                promotions and new products</label>
+                                        </div>
+
+                                        <div id="enter-button" class="" style="text-align:center;">
+                                            <a href="submit.php" id='submit' class="button">Submit <img
+                                                    src="images/arrow.png"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
 
     <div class="footer large-12 columns">
         <div class="row" style="margin-top: 30px; line-height: 20px; font-family:arial,san-serif">
