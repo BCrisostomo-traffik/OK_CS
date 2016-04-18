@@ -18,13 +18,15 @@
     <?php if (is_singular() && pings_open(get_queried_object())) : ?>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <?php endif; ?>
+
+
     <!-- for Facebook -->
-    <meta property="og:title" content="Savourez Le Froid"/>
+    <meta property="og:title" content="#CartersComingSoon "/>
     <meta property="og:type" content="website"/>
     <meta property="og:image" content="http://appstraffik.com/baileyscontest2016/images/fb_200x200.jpg"/>
     <meta property="og:url" content="http://appstraffik.com/baileyscontest2016"/>
     <meta property="og:description"
-          content="Recherchez la collerette promotionnelle sur les produits baileys® participants disponibles à la saq pour obtenir un code nip. Inscrivez votre code nip ici pour courir la chance de gagner."/>
+          content="Enter for a chance to win a Carter's Oshkosh baby shower at one of our many new Canadian locations. Winners will also receive a $250.00 gift card to spend at any Carter's Oshkosh store. Fill out the form below to start."/>
 
 
     <link href="<?php echo get_template_directory_uri() ?>/styles/foundation.css" rel="stylesheet">
@@ -58,54 +60,66 @@
 
 <body <?php body_class(); ?>>
 
+
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: 'your-app-id',
+            xfbml: true,
+            version: 'v2.5'
+        });
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
 <div class="wrap">
-    <div id="main" class="large-6 columns blackbg">
+    <div id="main" class="large-12 columns blackbg">
 
         <div class="header">
             <div class="row">
                 <div class="medium-12 columns hide-for-small logo">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/baileys-logo.png">
+                    <img class="logo-carters" src="<?php echo get_template_directory_uri() ?>/images/logo-carters.png">
+                    <img src="<?php echo get_template_directory_uri() ?>/images/logo-oshkosh.png">
+
                 </div>
-                <div class="medium-12 columns hide-for-small cta">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/cta-image-desktop.png">
-                </div>
-                <div class="medium-12 columns hide-for-medium-up">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/cta-image-mobile.png">
-                </div>
+
             </div>
         </div>
 
-        <div class="small-12 columns">
-            <div class="divider"></div>
-        </div>
+
+        <?php
 
 
+        global $language;
 
+        if (isset($_GET["lang"])) {
 
+            switch ($_GET["lang"]) {
+                case "en":
+                    $language = 'en';
+                    break;
+                case "fr":
+                    $language = 'fr';
+                    break;
+                default:
+                    $language = 'en';
+            }
 
-
-<?php
-
-
-global $language;
-
-if (isset($_GET["lang"])) {
-
-    switch ($_GET["lang"]) {
-        case "en":
+        } else {
             $language = 'en';
-            break;
-        case "fr":
-            $language = 'fr';
-            break;
-        default:
-            $language = 'en';
-    }
+        }
 
-} else {
-    $language = 'en';
-}
-
-?>
+        ?>
 
 

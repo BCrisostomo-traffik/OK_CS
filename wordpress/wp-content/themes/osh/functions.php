@@ -428,3 +428,10 @@ add_filter( 'widget_tag_cloud_args', 'twentysixteen_widget_tag_cloud_args' );
 if (function_exists("register_options_page")) {
 	register_options_page('Site Options');
 }
+
+
+
+/* wp-contact-from-7 */
+define ('WPCF7_AUTOP', false );   // set to false to remove <br> tags
+
+/* That's all, stop editing! Happy blogging. */
