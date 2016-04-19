@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AvenirCartersHeavy';
+  src: url('AvenirCartersHeavy.eot');
+  src: url('AvenirCartersHeavy.woff2') format('woff2'),
+       url('AvenirCartersHeavy.woff') format('woff'),
+       url('AvenirCartersHeavy.ttf') format('truetype'),
+       url('AvenirCartersHeavy.svg#AvenirCartersHeavy') format('svg'),
+       url('AvenirCartersHeavy.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

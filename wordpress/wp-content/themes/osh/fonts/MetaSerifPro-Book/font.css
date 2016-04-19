@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'MetaSerifPro-Book';
+  src: url('MetaSerifPro-Book.eot');
+  src: url('MetaSerifPro-Book.woff2') format('woff2'),
+       url('MetaSerifPro-Book.woff') format('woff'),
+       url('MetaSerifPro-Book.ttf') format('truetype'),
+       url('MetaSerifPro-Book.svg#MetaSerifPro-Book') format('svg'),
+       url('MetaSerifPro-Book.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+

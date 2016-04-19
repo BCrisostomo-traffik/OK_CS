@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'AvenirCartersMedium';
+  src: url('AvenirCartersMedium.eot');
+  src: url('AvenirCartersMedium.woff2') format('woff2'),
+       url('AvenirCartersMedium.woff') format('woff'),
+       url('AvenirCartersMedium.ttf') format('truetype'),
+       url('AvenirCartersMedium.svg#AvenirCartersMedium') format('svg'),
+       url('AvenirCartersMedium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
