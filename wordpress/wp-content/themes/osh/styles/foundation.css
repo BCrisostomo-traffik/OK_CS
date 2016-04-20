@@ -706,6 +706,7 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+
 body {
     line-height: 1;
     font-family: 'AvenirCartersHeavy';
@@ -768,7 +769,7 @@ meta.foundation-data-attribute-namespace {
 }
 
 html, body {
-    height: 100%;
+    height: auto;
 }
 
 *,
@@ -3218,7 +3219,7 @@ button.disabled.alert:hover, button.disabled.alert:focus, button[disabled].alert
 
 /* Standard Forms */
 form {
-    margin: 0 0 1rem;
+    margin: 0;
 }
 
 /* Using forms within rows, we need to set some defaults */
@@ -4226,7 +4227,7 @@ th.hide-for-touch {
  */
 .header {
     text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 90px;
 }
 
 .blackbg {
@@ -4333,7 +4334,7 @@ th.hide-for-touch {
     background: none repeat scroll 0 0 #FFFFFF;
     color: #634b2e;
     font-size: 12px;
-    padding: 4px;
+    padding: 8px;
     text-transform: uppercase;
     margin-bottom: 0px;
     font-size: 12px;
@@ -4442,10 +4443,20 @@ ul.neutraBold {
     margin: 0 0 0px;
     width: 100%;
     text-transform: none;
-    font-size: 11px;
-    margin-bottom: 10px;
+    font-size: 17px;
+    margin-bottom: 17px;
     font-weight: 600;
 }
+
+
+#registration-form form .rules {
+   margin-top:20px;
+}
+
+#registration-form form .rules label {
+    font-size: 11px;
+}
+
 
 #registration-form form label a {
     font-size: 11px;
@@ -5174,7 +5185,7 @@ body.privacy .footer ul li {
 
 #top-form {
     position: relative;
-    margin-top: -75px;
+    margin-top: -90px;
 }
 
 #top-form h1 {
@@ -5187,7 +5198,7 @@ body.privacy .footer ul li {
 
 #top-form p {
     font-size: 22px;
-    margin: 0 100px;
+    margin: 0 75px;
 }
 
 #form-container {
@@ -5205,14 +5216,14 @@ body.privacy .footer ul li {
     background: #4486cf;
     color: white;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 35px;
     text-transform: none !important;
-    font-size: 18px;
+    font-size: 28px;
     margin-top: 20px;
 }
 
 #form1 {
-    padding: 30px 120px 0px;
+    padding: 30px 65px 0px;
 
 }
 
@@ -5274,22 +5285,23 @@ div.wpcf7-mail-sent-ok {
 }
 
 body {
-    background: url('../images/site-bg.jpg') no-repeat;
-    background-size: cover;
+    background: url('../images/site-bg.png')  no-repeat,url('../images/kids.png') no-repeat;
+    background-size: contain;
+    background-position: top left, bottom left;
 }
 
 #nominee {
     color: #fff;
     background: url(../images/nominate-bg.png) no-repeat;
-    background-size: contain;
-    margin: 20px 0px;
+    margin: 10px 0px 30px;
 
 }
 
 #nominee p {
-    font-size: 13px;
-    padding: 25px 100px;
+    font-size: 16px;
+    padding: 20px 100px;
     text-align: center;
+    font-family: 'AvenirCartersMedium';
 }
 
 #registration-form form span.promotion, #registration-form form span.promotion span {
@@ -5334,33 +5346,70 @@ span.wpcf7-list-item {
 
 #form_complete {
     background: #c4e5f4;
-    margin: 25px -20px 25px;
-    padding: 10px 0;
+    margin: 25px -20px 0px;
+    padding: 20px 0;
 
 }
 
 #form_complete h3 {
     color: #4486cf;
-    font-size: 80px;
+    font-size: 160px;
     font-weight: 600;
     margin-bottom: 0px;
     line-height: 70px;
 }
 
 #form_complete h5 {
-    margin-top: 0px;
+    margin-top: 15px;
     margin-bottom: 10px;
     color: #4486cf;
+    font-size: 24px;
 }
 
 #form_complete p {
     color: #7e8184;
-    font-size: 15px;
+    font-size: 22px;
 }
 
 #form_complete .inner {
     border-top: 2px dashed white;
     border-bottom: 2px dashed white;
-    padding: 30px 0;
+    padding: 105px 0 45px;
 
+
+}
+
+.kids{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+
+div.wpcf7-validation-errors {
+    border:none !important;
+    color: #f02626;
+}
+
+input.wpcf7-not-valid{
+    border:1px solid #f02626;
+}
+
+span.wpcf7-not-valid-tip{
+    display: none !important;
 }

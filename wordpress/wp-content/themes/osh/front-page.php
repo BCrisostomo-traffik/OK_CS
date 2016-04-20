@@ -37,7 +37,7 @@ get_header();
                         <a href="" id="twitter-post">
                             <img src="<?php echo get_template_directory_uri() ?>/images/icon-twitter.png">
                         </a>   <a href="" id="fb-post">
-                        <img src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.png">
+                        <img id="btn-facebook" src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.png">
                     </a>
                         <?php
                         break;

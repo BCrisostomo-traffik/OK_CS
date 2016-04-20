@@ -21,10 +21,10 @@
 
 
     <!-- for Facebook -->
-    <meta property="og:title" content="#CartersComingSoon "/>
+    <meta property="og:title" content="#CartersComingSoon"/>
     <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://appstraffik.com/baileyscontest2016/images/fb_200x200.jpg"/>
-    <meta property="og:url" content="http://appstraffik.com/baileyscontest2016"/>
+    <meta property="og:image" content="http://appstraffik.com/oshkosh/wp-content/themes/osh/images/fb_200x200.jpg"/>
+    <meta property="og:url" content="http://appstraffik.com/oshkosh"/>
     <meta property="og:description"
           content="Enter for a chance to win a Carter's Oshkosh baby shower at one of our many new Canadian locations. Winners will also receive a $250.00 gift card to spend at any Carter's Oshkosh store. Fill out the form below to start."/>
 
@@ -60,30 +60,30 @@
 
 <body <?php body_class(); ?>>
 
-
 <script>
-    window.fbAsyncInit = function () {
+    window.fbAsyncInit = function() {
         FB.init({
-            appId: 'your-app-id',
-            xfbml: true,
-            version: 'v2.5'
+            appId      : '762701987163468',
+            xfbml      : true,
+            version    : 'v2.6'
         });
     };
 
-    (function (d, s, id) {
+    (function(d, s, id){
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-
-
-<div class="wrap">
+<div
+    class="fb-like"
+    data-share="true"
+    data-width="450"
+    data-show-faces="true">
+</div>
+<div class="wrap clearfix">
     <div id="main" class="large-12 columns blackbg">
 
         <div class="header">

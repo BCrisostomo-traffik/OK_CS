@@ -11,8 +11,21 @@
         formSuccess();
 
 
+        $('#btn-facebook').on('click',function(e){
+            e.preventDefault();
+            fbPopup();
+        });
     });
 
+
+    function fbPopup(){
+        FB.ui(
+            {
+                method: 'share',
+                href: 'http://appstraffik.com/oshkosh/'
+            }, function(response){});
+
+    };
 
     function formSuccess() {
         $(document).on('spam.wpcf7', function () {
