@@ -2,7 +2,7 @@
     <div class="footer-inner">
         <div class="row">
             <div class="links small-12 medium-10 medium-offset-1 columns">
-                <a href="">Disclaimer</a> <span>|</span> <a href="">Privacy Policy</a> <span>|</span><a href="">Your
+                <a href="<?php echo site_url(); ?>/disclaimer/">Disclaimer</a> <span>|</span> <a href="<?php echo site_url(); ?>/privacy-policy/">Privacy Policy</a> <span>|</span><a href="">Your
                     California Privacy
                     Rights</a> <span>|</span> <a href="">Site map</a>
             </div>

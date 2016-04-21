@@ -13,29 +13,37 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
-	<main id="main" class="site-main" role="main">
-		<?php
-		// Start the loop.
-		while ( have_posts() ) : the_post();
 
-			// Include the page content template.
-			get_template_part( 'template-parts/content', 'page' );
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) {
-				comments_template();
-			}
 
-			// End of the loop.
-		endwhile;
-		?>
 
-	</main><!-- .site-main -->
+<div id="form-container" class="small-12 columns end" style="z-index:999;">
+	<div id="form-inner">
+		<div id="top-form" class="text-center">
 
-	<?php get_sidebar( 'content-bottom' ); ?>
 
-</div><!-- .content-area -->
+			<?php
+			// Start the loop.
+			while ( have_posts() ) : the_post();
 
-<?php get_sidebar(); ?>
+				?>
+				<h1>
+					<?php the_field('title_' . $language);?>
+
+				</h1>
+			<p><?php
+				the_field('content_' . $language); ?>
+
+				</p>
+			<?php
+			endwhile;
+			?>
+
+		</div>
+
+	</div>
+</div>
+
+
+
 <?php get_footer(); ?>

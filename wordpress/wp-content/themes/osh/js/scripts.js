@@ -12,6 +12,7 @@
 
 
         $('#btn-facebook').on('click',function(e){
+
             e.preventDefault();
             fbPopup();
         });

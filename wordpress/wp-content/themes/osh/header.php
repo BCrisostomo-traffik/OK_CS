@@ -61,18 +61,21 @@
 <body <?php body_class(); ?>>
 
 <script>
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
         FB.init({
-            appId      : '762701987163468',
-            xfbml      : true,
-            version    : 'v2.6'
+            appId: '762701987163468',
+            xfbml: true,
+            version: 'v2.6'
         });
     };
 
-    (function(d, s, id){
+    (function (d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {return;}
-        js = d.createElement(s); js.id = id;
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
         js.src = "//connect.facebook.net/en_US/sdk.js";
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
@@ -83,9 +86,13 @@
         <div class="header">
             <div class="row">
                 <div class="medium-12 columns hide-for-small logo">
-                    <img class="logo-carters" src="<?php echo get_template_directory_uri() ?>/images/logo-carters.png">
-                    <img src="<?php echo get_template_directory_uri() ?>/images/logo-oshkosh.png">
+                    <a href="http://www.cartersoshkosh.ca/" target="_blank">
+                        <img class="logo-carters" src="<?php echo get_template_directory_uri() ?>/images/logo-carters.png">
+                    </a>
 
+                    <a href="http://www.cartersoshkosh.ca/" target="_blank">
+                        <img src="<?php echo get_template_directory_uri() ?>/images/logo-oshkosh.png">
+                    </a>
                 </div>
 
             </div>
