@@ -22,7 +22,7 @@ get_header();
             </div>
         </div>
 
-        <div id="share" class="text-center">
+        <div id="share" class="text-center hide">
 
             <?php
             global $language;
