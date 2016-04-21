@@ -77,12 +77,6 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
 </script>
-<div
-    class="fb-like"
-    data-share="true"
-    data-width="450"
-    data-show-faces="true">
-</div>
 <div class="wrap clearfix">
     <div id="main" class="large-12 columns blackbg">
 
