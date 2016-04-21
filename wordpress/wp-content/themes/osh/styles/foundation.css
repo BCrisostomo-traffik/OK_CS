@@ -2350,7 +2350,6 @@ a img {
 /* Default paragraph styles */
 p {
 
-    font-family: 'AvenirCartersHeavy';
     font-weight: normal;
     font-size: 19px;
     line-height: 1.2;
@@ -4970,7 +4969,7 @@ body.privacy .footer ul li {
     }
 
     #registration-form select {
-        height: 27px !important;
+        height: 32px !important;
         border-radius: 0 !important;
     }
 
@@ -5412,8 +5411,8 @@ div.wpcf7-validation-errors {
     color: #f02626;
 }
 
-input.wpcf7-not-valid{
-    border:1px solid #f02626;
+input.wpcf7-not-valid,select.wpcf7-not-valid{
+    border:2px solid #f02626;
 }
 
 span.wpcf7-not-valid-tip{
