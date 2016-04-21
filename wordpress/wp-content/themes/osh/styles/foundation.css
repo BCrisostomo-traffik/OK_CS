@@ -4286,7 +4286,6 @@ th.hide-for-touch {
 
 .wrap {
     background-position: 0 0px;
-    s max-height: 1000px;
     width: 100%;
     height: 100%;
 }
@@ -5179,7 +5178,7 @@ body.privacy .footer ul li {
 }
 
 .wrap {
-    max-width: 860px;
+    max-width: 765px;
     margin: auto;
 }
 
@@ -5285,9 +5284,9 @@ div.wpcf7-mail-sent-ok {
 }
 
 body {
-    background: url('../images/site-bg.png')  no-repeat,url('../images/kids.png') no-repeat;
+    background:url('../images/kids.png') no-repeat;
     background-size: contain;
-    background-position: top left, bottom left;
+    background-position:bottom left;
 }
 
 #nominee {
@@ -5299,7 +5298,9 @@ body {
 
 #nominee p {
     font-size: 16px;
-    padding: 20px 100px;
+    padding: 20px 65px 10px;
+
+
     text-align: center;
     font-family: 'AvenirCartersMedium';
 }
@@ -5406,7 +5407,7 @@ div.wpcf7-validation-errors {
     color: #f02626;
 }
 
-input.wpcf7-not-valid{
+input.wpcf7-not-valid,select.wpcf7-not-valid{
     border:1px solid #f02626;
 }
 
