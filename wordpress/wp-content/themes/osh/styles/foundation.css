@@ -5179,7 +5179,7 @@ body.privacy .footer ul li {
 }
 
 .wrap {
-    max-width: 860px;
+    max-width: 765px;
     margin: auto;
 }
 
@@ -5189,9 +5189,9 @@ body.privacy .footer ul li {
 }
 
 #top-form h1 {
-    font-size: 70px;
+    font-size: 61px;
     color: #fff;
-    background: url(../images/title-top-bg.png) no-repeat;
+    background: #4486cf;
     background-size: contain;
     padding: 10px 40px;
 }
@@ -5229,14 +5229,14 @@ body.privacy .footer ul li {
 
 #form-inner {
 
-    border: 2px dashed white;
+    border: 2px solid white;
     border-bottom: none;
     padding: 20px;
 }
 
 .footer-inner {
 
-    border: 2px dashed white;
+    border: 2px solid white;
     border-top: none;
     border-bottom: none;
     padding: 55px 0 75px;
@@ -5259,7 +5259,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 .footer {
-    background: rgba(0, 0, 0, .2);
+    background: rgba(0, 0, 0, .4);
     padding: 0px 15px;
 }
 
@@ -5285,21 +5285,21 @@ div.wpcf7-mail-sent-ok {
 }
 
 body {
-    background: url('../images/site-bg.png')  no-repeat,url('../images/kids.png') no-repeat;
+    background: url('../images/kids.png') no-repeat;
     background-size: contain;
-    background-position: top left, bottom left;
+    background-position: bottom left;
 }
 
 #nominee {
     color: #fff;
-    background: url(../images/nominate-bg.png) no-repeat;
+    background: #4486cf;
     margin: 10px 0px 30px;
 
 }
 
 #nominee p {
     font-size: 16px;
-    padding: 20px 100px;
+    padding: 20px 65px;
     text-align: center;
     font-family: 'AvenirCartersMedium';
 }
