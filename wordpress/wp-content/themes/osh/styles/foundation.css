@@ -4898,7 +4898,7 @@ body.privacy .footer ul li {
 .footer p.contest-info {
     float: left;
     font-size: 10px;
-    margin: 5px 55px;
+    margin: 5px 100px;
 }
 
 .footer .responsible {
@@ -5193,11 +5193,12 @@ body.privacy .footer ul li {
     color: #fff;
     background: #4486cf;
     background-size: contain;
-    padding: 10px 40px;
+    padding: 10px 40px 0px;
+    margin-bottom: 20px;
 }
 
 #top-form p {
-    font-size: 22px;
+    font-size: 20px;
     margin: 0 75px;
 }
 
@@ -5219,6 +5220,7 @@ body.privacy .footer ul li {
     padding: 10px 35px;
     text-transform: none !important;
     font-size: 28px;
+    cursor: pointer;
     margin-top: 20px;
 }
 
@@ -5239,7 +5241,7 @@ body.privacy .footer ul li {
     border: 2px solid white;
     border-top: none;
     border-bottom: none;
-    padding: 55px 0 75px;
+    padding: 35px 0 200px;
 }
 
 #form-container {
@@ -5297,7 +5299,7 @@ body {
 
 #nominee p {
     font-size: 16px;
-    padding: 20px 65px;
+    padding: 20px 50px;
     text-align: center;
     font-family: 'AvenirCartersMedium';
 }
@@ -5370,8 +5372,8 @@ span.wpcf7-list-item {
 }
 
 #form_complete .inner {
-    border-top: 2px dashed white;
-    border-bottom: 2px dashed white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     padding: 105px 0 45px;
 
 
@@ -5382,6 +5384,9 @@ span.wpcf7-list-item {
     bottom: 0;
     width: 100%;
     left: 0;
+
+    z-index: 10;
+    pointer-events: none;
 }
 .kids img{
     width:100%;
