@@ -102,6 +102,8 @@
     </div>
 </div>
 </div>
+<div class="kids">
+    <img class="" src="<?php echo get_template_directory_uri() ?>/images/kids.png"> </div>
 </div>
 
 <script src="<?php echo get_template_directory_uri() ?>/js/vendor/jquery.js"></script>

@@ -5285,9 +5285,7 @@ div.wpcf7-mail-sent-ok {
 }
 
 body {
-    background: url('../images/kids.png') no-repeat;
-    background-size: contain;
-    background-position: bottom left;
+    position: relative;
 }
 
 #nominee {
@@ -5384,6 +5382,9 @@ span.wpcf7-list-item {
     bottom: 0;
     width: 100%;
     left: 0;
+}
+.kids img{
+    width:100%;
 }
 
 .clearfix:after {
