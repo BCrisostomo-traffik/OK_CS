@@ -7,18 +7,17 @@ get_header();
     <div id="form-inner">
         <div id="top-form" class="text-center">
             <h1><?php echo get_field('form_title_' . $language); ?></h1>
-            <p><?php echo get_field('form_content_' . $language); ?></p>
+            <?php echo get_field('form_content_' . $language); ?>
         </div>
         <div id='registration-form' class="clearfix">
             <?php
-            echo do_shortcode('[contact-form-7 id="agfrsasfasdasddsadsasdom" title="English Form"]');
+            echo do_shortcode('[contact-form-7 id="contact-form" title="English Form"]');
             ?>
         </div>
 
         <div id="form_complete" class="text-center hide">
             <div class="inner">
                 <?php echo get_field('thank_you_' . $language); ?>
-
             </div>
         </div>
 
