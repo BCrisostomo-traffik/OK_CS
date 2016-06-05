@@ -9,14 +9,14 @@
                 switch ($language) {
                 case "en":
                     ?>
-                    <a href="<?php echo site_url(); ?>/disclaimer/">Disclaimer</a> <span>|</span> <a
-                    href="<?php echo site_url(); ?>/privacy-policy/">Privacy Policy</a>
+                    <a href="http://www.cartersoshkosh.ca/en_CA/disclaimer.html" target="_blank">Disclaimer</a> <span>|</span> <a
+                    href="http://www.cartersoshkosh.ca/en_CA/privacy/privacy-policy.html" target="_blank">Privacy Policy</a>
                     <?php
                     break;
                 case "fr":
                 ?>
-                <a href="<?php echo site_url(); ?>/disclaimer/?lang=<?php echo $language; ?>">Avis de non-responsabilité</a> <span>|</span> <a
-                    href="<?php echo site_url(); ?>/privacy-policy/?lang=<?php echo $language; ?>">Politique de confidentialité</a>
+                <a href="http://www.cartersoshkosh.ca/fr_CA/disclaimer.html" target="_blank">Avis de non-responsabilité</a> <span>|</span> <a
+                    href="http://www.cartersoshkosh.ca/fr_CA/privacy/privacy-policy.html" target="_blank">Politique de confidentialité</a>
               <?php  }
                 ?>
 
