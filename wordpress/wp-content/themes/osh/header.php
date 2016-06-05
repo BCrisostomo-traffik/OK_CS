@@ -12,6 +12,26 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+
+    <?php
+
+    global $language;
+    if (isset($_GET["lang"])) {
+        switch ($_GET["lang"]) {
+            case "en":
+                $language = 'en';
+                break;
+            case "fr":
+                $language = 'fr';
+                break;
+            default:
+                $language = 'en';
+        }
+    } else {
+        $language = 'en';
+    }
+    ?>
+
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -21,12 +41,34 @@
 
 
     <!-- for Facebook -->
-    <meta property="og:title" content="#CartersComingSoon"/>
-    <meta property="og:type" content="website"/>
-    <meta property="og:image" content="http://appstraffik.com/oshkosh/wp-content/themes/osh/images/fb_200x200.jpg"/>
-    <meta property="og:url" content="http://appstraffik.com/oshkosh"/>
-    <meta property="og:description"
-          content="Enter for a chance to win a Carter's Oshkosh baby shower at one of our many new Canadian locations. Winners will also receive a $250.00 gift card to spend at any Carter's Oshkosh store. Fill out the form below to start."/>
+
+    <?php
+    switch ($language) {
+        case "en":
+            ?>
+            <meta property="og:title" content="#CartersComingSoon"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:image"
+                  content="<?php echo get_template_directory_uri() ?>/images/fb_200x200.jpg"/>
+            <meta property="og:url" content="<?php echo site_url(); ?>"/>
+            <meta property="og:description"
+                  content="Enter for a chance to win a Carter's Oshkosh baby shower at one of our many new Canadian locations. Winners will also receive a $250.00 gift card to spend at any Carter's Oshkosh store. Fill out the form below to start."/>
+
+            <?php
+            break;
+        case "fr":
+            ?>
+            <meta property="og:title" content="#CartersArriveBientôt"/>
+            <meta property="og:type" content="website"/>
+            <meta property="og:image"
+                  content="<?php echo get_template_directory_uri() ?>/images/fb_200x200.jpg"/>
+            <meta property="og:url" content="<?php echo site_url(); ?>&lang=fr"/>
+            <meta property="og:description"
+                  content="J’ai participé au concours #CartersArriveBientôt pour gagner une fête pour bébé chez Carter’s OshKosh et 250$. Souhaitez-moi bonne chance!"/>
+            <?php
+            break;
+    }
+    ?>
 
 
     <link href="<?php echo get_template_directory_uri() ?>/styles/foundation.css" rel="stylesheet">
@@ -82,45 +124,16 @@
 </script>
 <div class="wrap clearfix">
     <div id="main" class="large-12 columns blackbg">
-
         <div class="header">
             <div class="row">
                 <div class="medium-12 columns hide-for-small logo">
                     <a href="http://www.cartersoshkosh.ca/" target="_blank">
-                        <img class="logo-carters" src="<?php echo get_template_directory_uri() ?>/images/logo-carters.png">
+                        <img class="logo-carters"
+                             src="<?php echo get_template_directory_uri() ?>/images/logo-carters-<?php echo $language; ?>.png">
                     </a>
-
                     <a href="http://www.cartersoshkosh.ca/" target="_blank">
                         <img src="<?php echo get_template_directory_uri() ?>/images/logo-oshkosh.png">
                     </a>
                 </div>
-
             </div>
         </div>
-
-
-        <?php
-
-
-        global $language;
-
-        if (isset($_GET["lang"])) {
-
-            switch ($_GET["lang"]) {
-                case "en":
-                    $language = 'en';
-                    break;
-                case "fr":
-                    $language = 'fr';
-                    break;
-                default:
-                    $language = 'en';
-            }
-
-        } else {
-            $language = 'en';
-        }
-
-        ?>
-
-

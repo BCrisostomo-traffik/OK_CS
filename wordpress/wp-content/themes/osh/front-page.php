@@ -1,5 +1,6 @@
 <?php
 get_header();
+
 ?>
 
 
@@ -11,22 +12,23 @@ get_header();
         </div>
         <div id='registration-form' class="clearfix">
             <?php
-            echo do_shortcode('[contact-form-7 id="contact-form" title="English Form"]');
+            switch ($language) {
+                case "en":
+                    echo do_shortcode('[contact-form-7 id="contact-form" title="English Form"]');
+                    break;
+                case "fr":
+                    echo do_shortcode('[contact-form-7 id="32" title="French Form"]');
+                    break;
+            }
             ?>
         </div>
-
         <div id="form_complete" class="text-center hide">
             <div class="inner">
                 <?php echo get_field('thank_you_' . $language); ?>
             </div>
         </div>
-
         <div id="share" class="text-center hide">
-
             <?php
-            global $language;
-
-
             switch ($language) {
             case "en":
                 ?>
@@ -38,19 +40,22 @@ get_header();
                 </a>   <a href="" id="fb-post">
                 <img id="btn-facebook" src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.png">
             </a>
-            <?php
-            break;
-            case "fr":
-            ?>
-                <h3>Share it on-fr:</h3>
-
                 <?php
                 break;
-            }
+            case "fr":
             ?>
+            <h3>Partagez le concours sur :</h3>
+            <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+            <a href="http://twitter.com/intent/tweet?text=I%20entered%20the%20%23CartersArriveBient%C3%B4t%20contest%20for%20a%20chance%20to%20win%20a%20baby%20shower%20at%20Carter%E2%80%99s%20OshKosh%20and%20%24250%20gift%20card.%20Wish%20me%20luck!">
+                <img
+                    src="<?php echo get_template_directory_uri() ?>/images/icon-twitter.png">
+            </a> <a href="" id="fb-post">
+                <img id="btn-facebook" src="<?php echo get_template_directory_uri() ?>/images/icon-facebook.png">
+                <?php
+                break;
+                }
+                ?>
         </div>
     </div>
 </div>
-
-
 <?php get_footer(); ?>
