@@ -1,8 +1,7 @@
 <?php
 global $language;
-$language = 'en';
+$language = 'fr';
 ?>
-
 <script>
     $social = "<?php echo is_social(); ?>";
     $language = "<?php echo $language; ?>";
@@ -13,24 +12,20 @@ $language = 'en';
     } else if ($ref == 'http://www.cartersoshkosh.ca/en_CA/carterscomingsoon.html') {
     } else if ($ref == 'http://www.cartersoshkosh.ca/fr_CA/carterscomingsoon.html') {
     } else {
-        window.location.href = "http://www.cartersoshkosh.ca/<?php echo $language; ?>_CA/carterscomingsoon.html";
+       window.location.href = "http://www.cartersoshkosh.ca/<?php echo $language; ?>_CA/carterscomingsoon.html";
     }
 </script>
+
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> class="no - js">
+<html <?php language_attributes(); ?> class="no-js">
 <head>
-
-
-    <meta charset=" <?php bloginfo('charset'); ?>">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <?php if (is_singular() && pings_open(get_queried_object())) : ?>
         <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
     <?php endif; ?>
-
-
     <!-- for Facebook -->
-
     <?php
     switch ($language) {
         case "en":

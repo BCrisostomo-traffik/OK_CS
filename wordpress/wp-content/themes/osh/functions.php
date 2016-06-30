@@ -430,6 +430,23 @@ if (function_exists("register_options_page")) {
 }
 
 
+// Check for social network request
+function is_social(){
+	$is_social = false;
+	$agent = $_SERVER['HTTP_USER_AGENT'];
+
+	switch ($agent)
+	{
+
+		case strstr($agent, 'facebookexternalhit') > -1:
+		case strstr($agent, 'LinkedInBot') > -1:
+		case strstr($agent, 'Twitter') > -1:
+			$is_social = true;
+			break;
+	}
+	return $is_social;
+}
+
 
 /* wp-contact-from-7 */
 define ('WPCF7_AUTOP', false );   // set to false to remove <br> tags

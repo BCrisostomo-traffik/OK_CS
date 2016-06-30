@@ -17,7 +17,7 @@ get_header(); ?>
 
 
 
-<div id="form-container" class="small-12 columns end" style="z-index:999;">
+<div id="form-container" class="page small-12 columns end" style="z-index:999;">
 	<div id="form-inner">
 		<div id="top-form" class="text-center">
 
@@ -27,10 +27,7 @@ get_header(); ?>
 			while ( have_posts() ) : the_post();
 
 				?>
-				<h1>
-					<?php the_field('title_' . $language);?>
 
-				</h1>
 			<p><?php
 				the_field('content_' . $language); ?>
 

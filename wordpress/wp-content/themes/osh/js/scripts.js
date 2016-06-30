@@ -12,7 +12,6 @@
 
 
         $('#btn-facebook').on('click',function(e){
-
             e.preventDefault();
             fbPopup();
         });
@@ -20,10 +19,11 @@
 
 
     function fbPopup(){
+        $language = ($language == 'fr') ? 'french/' : '/';
         FB.ui(
             {
                 method: 'share',
-                href: 'http://appstraffik.com/oshkosh/'
+                href: 'http://carterscomingsoon.com/'+$language
             }, function(response){});
 
     };
